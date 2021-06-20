@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-w!kv74ocnh@wb@
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
 ALLOWED_HOSTS = [
-    'https://vast-reef-96012.herokuapp.com/'
+    '*'
 ]
 
 
