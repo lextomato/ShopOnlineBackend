@@ -39,6 +39,9 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = [
     "https://shop-online-forntend.herokuapp.com",
 ]
+CORS_ALLOWED_ORIGINS = [
+    "https://shop-online-forntend.herokuapp.com",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
