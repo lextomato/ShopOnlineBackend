@@ -37,12 +37,6 @@ ALLOWED_HOSTS = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = [
-    "https://shop-online-forntend.herokuapp.com",
-]
-CORS_ALLOWED_ORIGINS = [
-    "https://shop-online-forntend.herokuapp.com",
-]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
