@@ -15,7 +15,7 @@ from product.models import Product, Category
 ### Creating views for the REST API ###
 
 # View of the categories
-class CategoryViewSet(viewsets.ModelViewSet):    
+class CategoryViewSet(viewsets.ReadOnlyModelViewSet):    
     
     queryset = Category.objects.all().order_by('id')
     serializer_class = CategorySerializer
