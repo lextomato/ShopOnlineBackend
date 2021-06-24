@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'product',
     'rest_framework',
     'corsheaders',
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -165,3 +166,15 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Bsale_test API',
+    'DESCRIPTION': 'REST API for Bsale_test product store',
+    'VERSION': '1.0.0',
+    'COMPONENT_SPLIT_PATCH': False,
+    'SCHEMA_PATH_PREFIX_TRIM': True,
+}
